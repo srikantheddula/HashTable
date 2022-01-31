@@ -6,7 +6,7 @@ namespace HashTable
 {
      class Node<K,V>
     {
-        public struct KeyValue<K,V>
+        public struct KeyValue<K, V>
         {
             public K Key { get; set; }
             public V Value { get; set; }
@@ -72,12 +72,14 @@ namespace HashTable
             foreach (var linkedList in items)
             {
                 if (linkedList != null)
+                {
                     foreach (var element in linkedList)
                     {
                         string res = element.ToString();
                         if (res != null)
                             Console.WriteLine(element.Key + " " + element.Value);
                     }
+                }
             }
         }
     }

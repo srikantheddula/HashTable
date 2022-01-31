@@ -6,7 +6,7 @@ namespace HashTable
     {
         public static void CountNumberOfOccurance(string paragraph)
         {
-            Node<string, int> hashTabe = new Node<string, int>(6);
+            Node<string, int> hashTabe = new Node<string, int>(6); //creting object
             string[] words = paragraph.Split(' ');
             foreach (string Word in words)
             {
@@ -20,8 +20,8 @@ namespace HashTable
         }
         static void Main(string[] args)
         {
-
-            CountNumberOfOccurance("To be or not to be");
+            CountNumberOfOccurance("Paranoids are not paranoids because they are paranoids but beacause they keep putting themselves deliberately" +
+                "into a paranoids avoidable situations");
         }
     }
 }
